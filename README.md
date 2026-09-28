@@ -70,6 +70,10 @@ After editing, choose **Reload settings** from the tray menu.
 - **Terminals:** `Ctrl+C` would interrupt the running program there, so instead the app remembers the keys typed on the current line (in memory only; cleared on Enter, clicks, arrow keys or switching windows), erases them with Backspace and retypes them in the other language.
 - **`Ctrl+CapsLock`** is caught with a low-level keyboard hook and swallowed, so Caps Lock never toggles.
 
+## AI agent skill
+
+Pasted gibberish into Claude, ChatGPT or Cursor? The [`hebrew-keyboard-layout-fix`](skill/hebrew-keyboard-layout-fix) skill teaches AI agents to recognize wrong-layout text (`tbh rumv` → `אני רוצה`) and answer what you actually meant. It includes a zero-dependency Python converter using the same algorithm as the app.
+
 ## Build from source
 
 Requires only Windows 10/11 (the C# compiler of .NET Framework 4.x is built in).
@@ -147,6 +151,10 @@ Debugging: create an empty `%APPDATA%\KeyboardFix\debug.log` and the app will wr
 - **בתוכנות רגילות:** התוכנה שומרת את לוח ההעתקה, שולחת `Ctrl+C`, ממירה לפי המיקום הפיזי של המקשים, מדביקה עם `Ctrl+V` ומחזירה את התוכן המקורי ללוח.
 - **האם יש טקסט מסומן, והאם זו תיבת טקסט?** התוכנה בודקת את זה דרך UI Automation, ממשק הנגישות של Windows. לכן הכפתור הצף מופיע רק כשבאמת מסומן טקסט בתוך שדה שאפשר לערוך.
 - **בטרמינל:** שליחת `Ctrl+C` הייתה עוצרת את התוכנית שרצה. במקום זה התוכנה זוכרת את המקשים שהוקלדו בשורה הנוכחית, מוחקת אותם ב-Backspace ומקלידה אותם מחדש בשפה השנייה. הזיכרון נשמר רק בזיכרון התוכנה, ומתאפס ב-Enter, בלחיצת עכבר, בחיצים או במעבר חלון.
+
+## סקיל לסוכני AI
+
+הדבקתם ג'יבריש ל-Claude, ל-ChatGPT או ל-Cursor? הסקיל [`hebrew-keyboard-layout-fix`](skill/hebrew-keyboard-layout-fix) מלמד סוכני AI לזהות טקסט שהוקלד בשפה הלא נכונה (`tbh rumv` ← `אני רוצה`) ולענות על מה שבאמת התכוונתם. הוא כולל סקריפט Python ללא תלויות, שעובד באותו אלגוריתם כמו התוכנה.
 
 ## מגבלות
 

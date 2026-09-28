@@ -10,6 +10,8 @@ Hebrew ↔ English layout fixer for Windows — works in every app.
 
 [**⬇ Download the installer**](../../releases/latest) · [**📖 עברית — קראו בעברית**](#hebrew)
 
+<img src="assets/demo.gif" width="760" alt="Keyboard Fix demo: gibberish typed on the wrong layout is fixed with Ctrl+CapsLock, then with the floating button">
+
 </div>
 
 ---
